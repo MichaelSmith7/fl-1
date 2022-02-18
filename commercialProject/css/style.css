@@ -42,7 +42,7 @@ body {
 }
 
 .slick-prev, .slick-next {
-  top: 20vw !important;
+  top: 8vw !important;
   z-index: 2;
   font-size: 0px !important;
   color: transparent !important;
