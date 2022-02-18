@@ -42,6 +42,7 @@ body {
 }
 
 .slick-prev, .slick-next {
+  top: 35%;
   z-index: 2;
   font-size: 0px !important;
   color: transparent !important;
@@ -465,48 +466,6 @@ main .homes, main .working {
   margin: 2vw 0;
   padding: 0 9vw;
 }
-main .homes .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-main .homes .row .card-home .slide-home {
-  width: 100%;
-  height: 20vw;
-  min-width: 0;
-  border-radius: 2vw;
-}
-main .homes .row .card-home .slide-home .slider_item {
-  height: 17vw;
-  width: 100%;
-}
-main .homes .row .card-home .slide-home .slider_item .slide-image {
-  border-radius: 2vw;
-  height: 100%;
-  width: 100%;
-}
-main .homes .row .card-home form input {
-  border: 0.1vw solid #319F1C;
-  padding: 0.5vw 1vw;
-  border-radius: 0.5vw;
-}
-main .homes .row .card-home form button {
-  font-size: 0.8vw;
-  border: 0.1vw solid #319F1C;
-  padding: 0.5vw 1vw;
-  border-radius: 0.5vw;
-  background-color: #319F1C;
-  color: #fff;
-}
-main .homes .row .card-home button {
-  margin: 0.5vw 0;
-  font-size: 0.8vw;
-  border: 0.1vw solid #FFDC0A;
-  padding: 0.5vw;
-  border-radius: 0.5vw;
-  background-color: #FFDC0A;
-  color: #000;
-}
 main .excurs {
   padding: 0 9vw;
   margin-bottom: 3vw;
@@ -655,32 +614,32 @@ main .prices .btn-viber, main .prices .btn-telegram {
   height: 3vw;
   color: #fff;
 }
-main .prices .packets {
+main .packets {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
 }
-main .prices .packets .packet1 {
+main .packets .packet1 {
   height: 26vw !important;
 }
-main .prices .packets .packet2 {
+main .packets .packet2 {
   height: 30vw !important;
 }
-main .prices .packets .packet3 {
+main .packets .packet3 {
   height: 37vw !important;
 }
-main .prices .packets .packet1, main .prices .packets .packet2, main .prices .packets .packet3 {
+main .packets .packet1, main .packets .packet2, main .packets .packet3 {
   -webkit-box-shadow: 0px 0px 10px 15px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 0px 10px 15px rgba(34, 60, 80, 0.2);
   border-radius: 2vw;
   padding: 2vw;
 }
-main .prices .packets .packet1 .price1, main .prices .packets .packet2 .price1, main .prices .packets .packet3 .price1 {
+main .packets .packet1 .price1, main .packets .packet2 .price1, main .packets .packet3 .price1 {
   text-align: end;
   width: 100%;
 }
-main .prices .packets .packet-yellow-border {
+main .packets .packet-yellow-border {
   margin: 3vw 0;
   -webkit-box-shadow: 0px 0px 10px 15px rgba(255, 220, 10, 0.25);
           box-shadow: 0px 0px 10px 15px rgba(255, 220, 10, 0.25);
@@ -688,12 +647,12 @@ main .prices .packets .packet-yellow-border {
   padding: 2vw;
   height: 10vw;
 }
-main .prices .packets .packet-yellow-border p {
+main .packets .packet-yellow-border p {
   font-size: 1.2vw;
 }
-main .prices .packets .packet-red-border {
+main .packets .packet-red-border {
   position: absolute;
-  right: -30vw;
+  right: -20.5vw;
   bottom: 5vw;
   width: 70vw;
   height: 15vw;
@@ -706,7 +665,7 @@ main .prices .packets .packet-red-border {
   display: flex;
   padding-left: 3vw;
 }
-main .prices .packets .packet-red-border .home, main .prices .packets .packet-red-border .price {
+main .packets .packet-red-border .home, main .packets .packet-red-border .price {
   width: 18vw;
   font-size: 1vw;
   display: -webkit-box;
@@ -718,7 +677,7 @@ main .prices .packets .packet-red-border .home, main .prices .packets .packet-re
           flex-direction: column;
   text-align: center;
 }
-main .prices .packets .packet-red-border .home span, main .prices .packets .packet-red-border .price span {
+main .packets .packet-red-border .home span, main .packets .packet-red-border .price span {
   width: 100%;
   margin: 0.5vw 0;
   border-bottom: 0.1vw solid black;
@@ -1013,6 +972,43 @@ strong {
 }
 
 @media (max-width: 960px) {
+  .slick-prev {
+    left: -1vw !important;
+  }
+
+  .slick-next {
+    right: 0.5vw !important;
+  }
+
+  .slick-prev, .slick-next {
+    top: 35%;
+    z-index: 2;
+    width: 0 !important;
+    position: static !important;
+    font-size: 0px !important;
+    color: transparent !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .slick-prev::before, .slick-prev::after, .slick-next::before, .slick-next::after {
+    background-color: #F6F6F6 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 10vw;
+    height: 10vw;
+    font-size: 8vw !important;
+    border-radius: 100%;
+    color: #319F1C !important;
+    border: 0.2vw solid #F6F6F6;
+  }
+
   header .header-top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1196,6 +1192,199 @@ strong {
 
   main .menu-right-fixed {
     display: none;
+  }
+  main .first-block {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("./../img/background-block-1.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./../img/background-block-1.png");
+    background-size: cover, cover;
+  }
+  main .first-block h1 {
+    font-size: 5vw;
+  }
+  main .first-block p {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  main .first-block button {
+    height: 10vw;
+    font-size: 4vw;
+  }
+  main .block-facts {
+    height: auto;
+  }
+  main .block-facts .row {
+    padding: 2vw 0;
+  }
+  main .block-facts .row .block-facts-item {
+    font-size: 3vw;
+  }
+  main .block-facts .row .block-facts-item img {
+    width: 10vw;
+  }
+  main .big-text-block h2 {
+    font-size: 4vw;
+  }
+  main .big-text-block p, main .big-text-block ul {
+    font-size: 3vw;
+  }
+  main .homes .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .homes .row .card-home {
+    margin-bottom: 5vw;
+  }
+  main .homes .row .card-home .slide-home {
+    width: 100%;
+    height: 50vw;
+    min-width: 100%;
+    border-radius: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .homes .row .card-home .slide-home .slick-list {
+    position: relative;
+    left: 5vw;
+    width: 100%;
+  }
+  main .homes .row .card-home .slide-home .slider_item {
+    height: 45vw;
+    width: 100%;
+  }
+  main .homes .row .card-home .slide-home .slider_item .slide-image {
+    border-radius: 2vw;
+    height: 100%;
+    width: 100%;
+  }
+  main .homes .row .card-home form input {
+    border: 0.1vw solid #319F1C;
+    padding: 0.8vw 1vw;
+    border-radius: 0.5vw;
+  }
+  main .homes .row .card-home form button {
+    font-size: 4vw;
+    border: 1vw solid #319F1C;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    background-color: #319F1C;
+    color: #fff;
+  }
+  main .homes .row .card-home .col-11 {
+    padding-right: 5px;
+  }
+  main .homes .row .card-home button {
+    margin: 0.5vw 0;
+    width: 100%;
+    font-size: 4vw;
+    border: 0vw solid #FFDC0A;
+    padding: 0vw;
+    border-radius: 0.5vw;
+    background-color: #FFDC0A;
+    color: #000;
+  }
+  main .excurs .excurs-card {
+    padding: 2vw;
+    margin-bottom: 10vw;
+  }
+  main .video-block .carusel {
+    height: 30vw;
+    margin: 5vw 0;
+  }
+  main .video-block .carusel .carusel-img {
+    max-height: 30vw;
+    max-width: 35vw;
+  }
+  main .video-block .row .panel {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .video-block .row .panel p {
+    font-size: 2.9vw;
+    line-height: 6vw;
+  }
+  main .prices p {
+    font-size: 4vw;
+  }
+  main .prices .prices-messenger .btn-mess {
+    font-size: 5vw;
+    height: 15vw;
+  }
+  main .packets .packet1, main .packets .packet2, main .packets .packet3 {
+    height: auto !important;
+    margin-bottom: 10vw;
+  }
+  main .packets .packet-yellow-border {
+    height: auto;
+  }
+  main .packets .packet-yellow-border p {
+    font-size: 4vw;
+  }
+  main .packets .packet-red-border {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 6vw 0;
+    bottom: 0;
+  }
+  main .packets .packet-red-border .home, main .packets .packet-red-border .price {
+    font-size: 3vw;
+    width: 50%;
+  }
+  main .credit h3 {
+    font-size: 5vw;
+  }
+  main .credit .bank {
+    height: 15vw;
+  }
+  main .credit p {
+    font-size: 3.5vw;
+    font-weight: 900;
+  }
+  main .garant ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .action .left-item {
+    height: 15vw;
+  }
+  main .action .action-item {
+    height: auto;
+  }
+  main .action .action-all .action-surprise {
+    position: static;
+    border-radius: 2vw;
+    padding: 2vw;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  main .action .action-all .action-surprise p {
+    font-size: 5vw;
+  }
+  main .project h3 {
+    font-size: 4vw;
+  }
+  main .project button {
+    font-size: 5vw;
+    padding: 2vw 4vw;
+  }
+  main .project .plashka {
+    height: auto;
+    padding: 5vw;
+    margin-bottom: 5vw;
   }
 
   footer .logo-and-call-btn button {
