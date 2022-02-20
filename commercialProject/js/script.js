@@ -1,7 +1,6 @@
 let burger = document.querySelector(".burger");
 let burgerMenu =  document.querySelector(".menu");
 
-console.log(burgerMenu)
 
 burger.addEventListener('click', () => {
     burger.classList.toggle("active-burger");
@@ -13,6 +12,18 @@ burger.addEventListener('click', () => {
         burgerMenu.style.left = "-42vw"
     }
 })
+
+const IMAGES = document.querySelectorAll(".product-img")
+let mainImage = document.querySelector('.product-image-main')
+let image;
+
+for (let IMAGE of IMAGES){
+	IMAGE.addEventListener('click', () => {
+        img = IMAGE.getAttribute('src');
+        mainImage.style.backgroundImage = "url('" + img + "')" ;
+    })
+}
+
 
 const SLIDES = document.querySelectorAll('.carusel-img')
 
@@ -28,6 +39,12 @@ function	clearActiveClasses() {
   })
 }
 
+$(".slider-plan").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrow: true
+});
 $(".slide-home").slick({
     infinite: true,
     slidesToShow: 1,

@@ -23,6 +23,10 @@ body {
   background-color: #319F1C;
 }
 
+textarea {
+  resize: none !important;
+}
+
 .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,6 +359,1133 @@ main .menu-right-fixed .block img {
   margin: 0.5vw;
   width: 2vw;
   height: 2vw;
+}
+main .project-dmitrov-brus {
+  padding: 0 9vw;
+}
+main .project-dmitrov-brus button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1vw;
+  font-weight: 800;
+  width: 100%;
+  padding: 0.5vw 0;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  border: #319F1C 0.2vw solid;
+  border-radius: 0 0 0.5vw 0.5vw;
+  margin-bottom: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .project-dmitrov-brus button:hover {
+  background-color: #319F1C;
+  color: #fff;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .project-dmitrov-brus .product-image {
+  max-height: 20vw;
+  height: 100%;
+  margin-bottom: 1vw;
+}
+main .project-dmitrov-brus .product-image .product-image-all {
+  max-height: 20vw;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+main .project-dmitrov-brus .product-image .product-image-all img {
+  height: 8vw;
+  width: 100%;
+  margin: 0.5vw 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  scroll-snap-align: center;
+}
+main .project-dmitrov-brus .product-image .product-image-main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .project-dmitrov-brus form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+main .project-dmitrov-brus form input {
+  width: 100%;
+  margin-bottom: 0.5vw;
+  border: #319F1C 0.1vw solid;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  line-height: 2vw;
+  padding-left: 1vw;
+}
+main .project-dmitrov-brus form input[type=submit] {
+  color: #fff;
+  background-color: #319F1C;
+}
+main .project-dmitrov-brus .project-dmitrov-stats {
+  border: #319F1C 0.1vw solid;
+  padding: 0.5vw 2vw;
+  margin-bottom: 1vw;
+}
+main .project-dmitrov-brus .project-dmitrov-stats span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1vw;
+}
+main .project-dmitrov-brus .project-dmitrov-price {
+  border: #319F1C 0.1vw solid;
+  padding: 0.5vw 2vw;
+  margin-bottom: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .project-dmitrov-brus .project-dmitrov-price p {
+  font-size: 1.5vw;
+  margin: 0;
+}
+main .project-dmitrov-brus .project-dmitrov-price p strong {
+  font-size: 2vw;
+}
+main .project-dmitrov-brus .project-dmitrov-description ul {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1vw;
+  line-height: 2vw;
+  list-style-image: none;
+  list-style-type: disc;
+  padding: 0 1vw;
+}
+main .test-surprise {
+  padding: 0 9vw;
+  margin-top: -2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("./../img/background-block-3.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right;
+}
+main .test-surprise h2 {
+  font-size: 7vw;
+  color: #319F1C;
+  text-align: center;
+}
+main .test-surprise h3 {
+  margin-top: 5vw;
+  font-size: 2vw;
+  max-width: 70%;
+}
+main .test-surprise p {
+  margin: 0;
+}
+main .test-surprise .surprise {
+  margin: 2vw 0;
+}
+main .test-surprise .surprise-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 15vw;
+  margin-bottom: 5vw;
+}
+main .test-surprise .surprise-item:nth-child(5) img {
+  max-width: 15vw;
+  width: 100%;
+}
+main .test-surprise .surprise-item img {
+  max-width: 10vw;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main .test-surprise .surprise-item img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+main .test-surprise .surprise-item p {
+  font-size: 1vw;
+}
+main .ready-project {
+  padding: 0 9vw;
+  background: url("./../img/background-ready.png") no-repeat right;
+  background-size: contain;
+}
+main .ready-project form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+  padding: 1.5vw;
+  margin: 2vw 0;
+  border-radius: 1vw;
+}
+main .ready-project form .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .ready-project form input, main .ready-project form textarea {
+  border: #319F1C solid 0.1vw;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  line-height: 2vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  padding-left: 1vw;
+}
+main .ready-project form textarea {
+  height: 15vw;
+}
+main .ready-project form .messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+main .ready-project form .messengers .whats-app, main .ready-project form .messengers .telegram, main .ready-project form .messengers .viber {
+  width: 2vw;
+  height: 2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 0.8vw;
+}
+main .ready-project form .messengers .whats-app:hover, main .ready-project form .messengers .telegram:hover, main .ready-project form .messengers .viber:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+main .ready-project form .messengers .whats-app {
+  background-image: url("./../img/whatsapp.svg");
+}
+main .ready-project form .messengers .telegram {
+  background-image: url("./../img/telegram.svg");
+}
+main .ready-project form .messengers .viber {
+  background-image: url("./../img/viber.svg");
+}
+main .ready-project button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  border: none;
+  background-color: #319F1C;
+  color: #fff;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  margin: 1vw 0;
+  padding: 1vw 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .ready-project button:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .services {
+  padding: 0 9vw;
+  margin: 3vw 0;
+}
+main .services h1 {
+  margin: 2vw auto;
+  width: 50%;
+  text-align: center;
+}
+main .services .service-item {
+  margin: 5vw 0;
+}
+main .services .service-item h3 {
+  font-size: 1.5vw;
+}
+main .services .service-item form input {
+  width: 18vw;
+  height: 2vw;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.5vw;
+  padding-left: 1.5vw;
+  font-size: 1vw;
+  margin: 0.5vw 0;
+}
+main .services .service-item form input[type=submit] {
+  background-color: #319F1C;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  margin: 0;
+  width: 18vw;
+  height: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .services .service-item form input[type=submit]:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .services .service-item .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+main .services .service-item .reverse .services-image img {
+  position: absolute;
+  height: 15vw;
+  width: auto;
+  right: 20%;
+  bottom: 0;
+}
+main .services .service-item .services-image {
+  border-radius: 2vw;
+  position: relative;
+  bottom: -5.5vw;
+  height: 8vw;
+  background-color: #EBEBEB;
+}
+main .services .service-item .services-image img {
+  position: absolute;
+  width: 10vw;
+  left: 20%;
+  bottom: 0;
+}
+main .services .service-item .services-image .img2 {
+  width: auto;
+  height: 15vw;
+}
+main .portfolio {
+  padding: 0 9vw;
+}
+main .portfolio .portfolio-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -0.5vw;
+}
+main .portfolio .portfolio-content .portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 20vw;
+  background: url("./../img/portfolio-img.png") no-repeat center;
+  background-size: cover;
+  margin-bottom: 0.5vw;
+  border-radius: 0.5vw;
+  padding: 0;
+  width: 33%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main .portfolio .portfolio-content .portfolio-item:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+main .portfolio .portfolio-content .portfolio-item div {
+  background-color: #319F1C;
+  color: #fff;
+  padding: 0.5vw;
+}
+main .portfolio .portfolio-content .portfolio-item div p {
+  font-size: 1vw;
+  width: 70%;
+}
+main .portfolio .btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .portfolio .btn-container button {
+  background-color: #319F1C;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  line-height: 3vw;
+  margin: 1vw auto;
+  width: 18vw;
+  border-radius: 0.5vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .portfolio .btn-container button:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .faq {
+  padding: 3vw 9vw;
+  background: url("./../img/faq-back.png") no-repeat right;
+  background-size: cover;
+}
+main .faq h3 {
+  font-size: 2vw;
+}
+main .faq p {
+  font-size: 1vw;
+}
+main .faq .maps {
+  width: 100%;
+}
+main .faq .maps img {
+  width: 100%;
+}
+main .faq .faq-contact .messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  margin: 1vw 0;
+}
+main .faq .faq-contact .messengers .whats-app, main .faq .faq-contact .messengers .telegram, main .faq .faq-contact .messengers .viber {
+  width: 1.2vw;
+  height: 1.2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 0.8vw;
+}
+main .faq .faq-contact .messengers .whats-app:hover, main .faq .faq-contact .messengers .telegram:hover, main .faq .faq-contact .messengers .viber:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+main .faq .faq-contact .messengers .whats-app {
+  background-image: url("./../img/whatsapp.svg");
+}
+main .faq .faq-contact .messengers .telegram {
+  background-image: url("./../img/telegram.svg");
+}
+main .faq .faq-contact .messengers .viber {
+  background-image: url("./../img/viber.svg");
+}
+main .faq form {
+  background-color: #fff;
+  padding: 2vw;
+  -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+  border-radius: 1vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .faq form input, main .faq form textarea {
+  border: #319F1C 0.1vw solid;
+  width: 100%;
+  border-radius: 0.5vw;
+  margin-bottom: 0.5vw;
+  height: 2vw;
+  padding-left: 1vw;
+}
+main .faq form input[type=submit], main .faq form textarea[type=submit] {
+  background-color: #319F1C;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 50%;
+}
+main .faq form input[type=submit]:hover, main .faq form textarea[type=submit]:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .faq form textarea {
+  height: 15vw;
+}
+main .dmitrov-home {
+  padding: 0 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .dmitrov-home h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+main .dmitrov-home .slider-plan {
+  height: 15vw;
+  width: 100%;
+  margin: 3vw 0;
+}
+main .dmitrov-home .slider-plan .slider_item {
+  height: 15vw;
+  width: 25%;
+  position: relative;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0.5vw;
+  width: 96%;
+  height: 15vw;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  padding: 1.5vw;
+  cursor: pointer;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover h3 {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover a {
+  color: #fff;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover:hover {
+  opacity: 1;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover .slide-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .dmitrov-home .slider-plan .slider_item .slide-hover .slide-stats p {
+  width: 50%;
+}
+main .dmitrov-home .slider-plan .slider_item img {
+  padding: 0 0.5vw;
+  width: 100%;
+  height: 100%;
+}
+main .dmitrov-home .slider-plan {
+  position: relative;
+}
+main .dmitrov-home .slider-plan .slick-arrow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
+  width: 0;
+}
+main .dmitrov-home .slider-plan .slick-prev, main .dmitrov-home .slider-plan .slick-next {
+  top: 6.5vw !important;
+}
+main .dmitrov-home .slider-plan .slick-next {
+  right: 35% !important;
+}
+main .dmitrov-home .slider-plan .slick-prev {
+  left: 32% !important;
+}
+main .dmitrov-home button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1vw;
+  font-weight: 800;
+  width: 25%;
+  padding: 0.5vw 0;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  border: #319F1C 0.2vw solid;
+  border-radius: 0 0 0.5vw 0.5vw;
+  margin-bottom: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .dmitrov-home button:hover {
+  background-color: #319F1C;
+  color: #fff;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .dmitrov-galery {
+  padding: 0 9vw;
+  margin: 3vw -1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .dmitrov-galery img {
+  width: 33%;
+  padding: 1vw;
+}
+main .working-perfect {
+  background-image: url("./../img/home.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5vw 8.9vw;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 8vw;
+}
+main .working-perfect .text-special h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.95vw;
+  line-height: 2.3vw;
+}
+main .working-perfect .text-special p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  max-width: 50%;
+  margin-bottom: 1.5vw;
+}
+main .working-perfect form {
+  max-width: 41vw;
+  height: 15vw;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+  padding: 1.2vw 2.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+main .working-perfect form::before {
+  content: "";
+  position: absolute;
+  background-image: url("./../img/welding.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10vw;
+  height: 10vw;
+  right: 3.2vw;
+  top: -1.8vw;
+}
+main .working-perfect form::after {
+  content: "";
+  position: absolute;
+  background-image: url("./../img/welding.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4.6vw;
+  height: 4.6vw;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  left: 7vw;
+  bottom: -2.8vw;
+}
+main .working-perfect form h2 {
+  margin: 0;
+  font-size: 1.7vw;
+  color: #319F1C;
+}
+main .working-perfect form p {
+  max-width: 100%;
+  font-size: 0.8vw;
+  margin-bottom: 1vw;
+}
+main .working-perfect form input {
+  width: 18vw;
+  height: 2vw;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.5vw;
+  padding-left: 1.5vw;
+  font-size: 1vw;
+}
+main .working-perfect form input:nth-child(5) {
+  background-color: #319F1C;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  margin: 0;
+  width: 18vw;
+  height: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .working-perfect form input:nth-child(5):hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .working-perfect form span {
+  font-size: 0.6vw;
+  width: 100%;
+  text-align: end;
+}
+main .price-list {
+  padding: 0 8.9vw;
+}
+main .price-list button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+  color: #000;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.5vw;
+  width: 100%;
+  margin-bottom: 1vw;
+  font-size: 0.8vw;
+}
+main .price-list button img {
+  fill: #319F1C;
+  width: 2vw;
+  height: 2vw;
+  margin: 0.5vw;
+}
+main .price-list .active-btn {
+  background-color: #319F1C;
+  color: #fff;
+}
+main .price-list .active-btn img {
+  fill: #fff;
+}
+main .price-list .price-list-stats {
+  margin-bottom: 3vw;
+  padding: 0 2vw;
+  border: 0.2vw #319F1C solid;
+  border-radius: 1vw;
+}
+main .price-list .price-list-stats h4 {
+  font-size: 1.5vw;
+  margin: 2vw 0;
+}
+main .price-list .price-list-stats form {
+  --background: #ffffff;
+  --text: #414856;
+  --radio: #536d4e;
+  --radio-checked: #319F1C;
+  --radio-size: 1.5vw;
+  --width: 100%;
+  --height: auto;
+  --border-radius: 10px;
+  background: var(--background);
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  color: var(--text);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main .price-list .price-list-stats form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0.5vw 0;
+}
+main .price-list .price-list-stats form label {
+  cursor: pointer;
+  width: 100%;
+  margin-left: 2vw;
+  font-size: 1vw;
+}
+main .price-list .price-list-stats form input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  height: 1.5vw;
+  width: 1.9vw;
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  border: 0.1vw solid var(--radio);
+  background: transparent;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+main .price-list .price-list-stats form input[type=radio]::before, main .price-list .price-list-stats form input[type=radio]::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 50%;
+}
+main .price-list .price-list-stats form input[type=radio]::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  z-index: 1;
+  opacity: var(--opacity, 1);
+}
+main .price-list .price-list-stats form input[type=radio]::after {
+  position: relative;
+  width: calc(100% /2);
+  height: calc(100% /2);
+  background: var(--radio-checked);
+  top: var(--y, 100%);
+  -webkit-transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+  transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+}
+main .price-list .price-list-stats form input[type=radio]:checked {
+  --radio: var(--radio-checked);
+}
+main .price-list .price-list-stats form input[type=radio]:checked::after {
+  --y: 0%;
+  -webkit-animation: stretch-animate 0.3s ease-out 0.17s;
+          animation: stretch-animate 0.3s ease-out 0.17s;
+}
+main .price-list .price-list-stats form input[type=radio]:checked::before {
+  --opacity: 0;
+}
+main .price-list .price-list-stats form input[type=radio]:checked ~ input[type=radio]::after {
+  --y: -100%;
+}
+main .price-list .price-list-stats form input[type=radio]:not(:checked)::before {
+  --opacity: 1;
+  -webkit-transition: opacity 0s linear 0.5s;
+  transition: opacity 0s linear 0.5s;
+}
+@-webkit-keyframes stretch-animate {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  28% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  50% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes stretch-animate {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  28% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  50% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+main .price-list .calc-price, main .price-list .sale5, main .price-list .action-friend {
+  padding: 1vw;
+  -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+  border-radius: 1vw;
+  margin-bottom: 2vw;
+}
+main .price-list .calc-price input, main .price-list .sale5 input, main .price-list .action-friend input {
+  border: #319F1C 0.1vw solid;
+  width: 100%;
+  border-radius: 0.5vw;
+  margin-bottom: 0.5vw;
+  height: 2vw;
+}
+main .price-list .calc-price input[type=submit], main .price-list .sale5 input[type=submit], main .price-list .action-friend input[type=submit] {
+  background-color: #319F1C;
+  border: none;
+  color: #fff;
+  font-size: 1vw;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .price-list .calc-price input[type=submit]:hover, main .price-list .sale5 input[type=submit]:hover, main .price-list .action-friend input[type=submit]:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+}
+main .price-list .calc-price h3, main .price-list .sale5 h3, main .price-list .action-friend h3 {
+  margin-top: 5vw;
+  font-size: 1.5vw;
+}
+main .price-list .calc-price h4, main .price-list .sale5 h4, main .price-list .action-friend h4 {
+  width: 90%;
+}
+main .price-list .calc-price p, main .price-list .sale5 p, main .price-list .action-friend p {
+  font-size: 0.8vw;
+  font-family: "Raleway", sans-serif;
+}
+main .price-list .calc-price button, main .price-list .sale5 button, main .price-list .action-friend button {
+  background-color: #319F1C;
+  font-size: 1vw;
+  line-height: 2vw;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .price-list .house-item {
+  margin-bottom: 2vw !important;
+}
+main .price-list .house-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+}
+main .price-list .house-item .house-item-stats {
+  font-size: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+  border-radius: 1vw;
+  padding: 2vw;
+}
+main .price-list .house-item .house-item-stats strong {
+  font-size: 2vw;
+}
+main .price-list .house-item .house-item-stats span {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .price-list .house-item .house-item-stats a {
+  color: #319F1C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+main .price-list .house-item .house-item-stats a img {
+  width: 3vw;
+}
+main .block-form {
+  background-image: url("./../img/form-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -2vw top;
+  padding: 0 8.9vw;
+  margin-top: -2vw;
+  height: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main .block-form .form-content h2 {
+  font-size: 1.85vw;
+  font-family: "Montserrat", sans-serif;
+}
+main .block-form .form-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8vw;
+}
+main .block-form .form-content form {
+  padding: 0.6vw 0 10vw 0;
+  width: 26.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .block-form .form-content form textarea {
+  padding: 1vw;
+  width: 25.2;
+  resize: none;
+  height: 4vw;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.1vw;
+  margin-top: 1.2vw;
+}
+main .block-form .form-content form input {
+  margin: 1vw 0 0.1vw 0;
+  padding: 0 1vw;
+  width: 25.2;
+  height: 2vw;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.1vw;
+}
+main .block-form .form-content form input:nth-child(3) {
+  height: 5vw;
+}
+main .block-form .form-content form input[type=submit] {
+  height: 2.5vw;
+  width: 12.5vw;
+  color: #fff;
+  font-size: 0.8vw;
+  background-color: #319F1C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .block-form .form-content form input[type=submit]:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+          box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
 }
 main .first-block {
   color: #fff;
