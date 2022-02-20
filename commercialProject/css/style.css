@@ -2364,6 +2364,347 @@ strong {
     font-size: 1.7vw;
   }
 
+  main .project-dmitrov-brus h3 {
+    font-size: 5vw;
+    margin: 4vw 0;
+  }
+  main .project-dmitrov-brus .product-image {
+    max-height: 40vw;
+  }
+  main .project-dmitrov-brus .product-image .product-image-all {
+    max-height: 40vw;
+  }
+  main .project-dmitrov-brus .product-image .product-image-all img {
+    height: 13vw;
+  }
+  main .project-dmitrov-brus button {
+    font-size: 4vw;
+  }
+  main .project-dmitrov-brus form input {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+  main .project-dmitrov-brus form input[type=submit] {
+    line-height: 6vw;
+  }
+  main .project-dmitrov-brus .project-dmitrov-stats span {
+    font-size: 2.5vw;
+  }
+  main .project-dmitrov-brus .project-dmitrov-price p {
+    font-size: 3.5vw;
+  }
+  main .project-dmitrov-brus .project-dmitrov-price p strong {
+    font-size: 6vw;
+  }
+  main .project-dmitrov-brus .project-dmitrov-description ul {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  main .dmitrov-home .slider-plan {
+    height: 40vw;
+  }
+  main .dmitrov-home .slider-plan .slick-prev, main .dmitrov-home .slider-plan .slick-next {
+    position: absolute !important;
+  }
+  main .dmitrov-home .slider-plan .slick-prev {
+    left: -5vw !important;
+  }
+  main .dmitrov-home .slider-plan .slick-next {
+    right: 5vw !important;
+  }
+  main .dmitrov-home .slider-plan .slider_item {
+    height: 30vw;
+  }
+  main .dmitrov-home .slider-plan .slider_item .slide-hover {
+    display: none;
+  }
+  main .dmitrov-home button {
+    font-size: 5vw;
+    width: 100%;
+    padding: 0 5vw;
+  }
+  main .dmitrov-galery img {
+    width: 50%;
+  }
+  main .block-form {
+    height: auto;
+  }
+  main .block-form .form-content h2 {
+    font-size: 8vw;
+  }
+  main .block-form .form-content p {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  main .block-form .form-content form {
+    width: 100%;
+  }
+  main .block-form .form-content form input {
+    height: auto;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  main .block-form .form-content form input[type=submit] {
+    height: auto;
+    font-size: 4vw;
+    line-height: 6vw;
+    width: 50%;
+  }
+  main .block-form .form-content form textarea {
+    height: 25vw;
+    font-size: 3vw;
+    line-height: 4.5vw;
+  }
+  main .price-list button {
+    font-size: 4vw;
+  }
+  main .price-list button img {
+    width: 5vw;
+    height: 5vw;
+    margin: 3vw;
+  }
+  main .price-list .price-list-stats {
+    font-size: 4vw;
+  }
+  main .price-list .price-list-stats h4 {
+    font-size: 4.5vw;
+    margin: 4vw 0;
+  }
+  main .price-list .price-list-stats form label {
+    font-size: 4vw;
+  }
+  main .price-list .price-list-stats form input[type=radio] {
+    height: 6.5vw;
+    width: 6.9vw;
+  }
+  main .price-list .calc-price, main .price-list .sale5, main .price-list .action-friend {
+    margin-bottom: 5vw;
+  }
+  main .price-list .calc-price h3, main .price-list .sale5 h3, main .price-list .action-friend h3 {
+    margin-top: 2vw;
+    font-size: 5vw;
+  }
+  main .price-list .calc-price p, main .price-list .sale5 p, main .price-list .action-friend p {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  main .price-list .calc-price button, main .price-list .sale5 button, main .price-list .action-friend button {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  main .price-list .calc-price input, main .price-list .sale5 input, main .price-list .action-friend input {
+    height: auto;
+    margin-bottom: 4vw;
+  }
+  main .price-list .calc-price input[type=submit], main .price-list .sale5 input[type=submit], main .price-list .action-friend input[type=submit] {
+    font-size: 4vw;
+  }
+  main .price-list .house-item {
+    margin: 3vw 15px !important;
+  }
+  main .price-list .house-item img {
+    margin: 0 -15px;
+  }
+  main .price-list .house-item .house-item-stats {
+    margin-right: 30px;
+    font-size: 3vw;
+  }
+  main .price-list .house-item .house-item-stats strong {
+    font-size: 4vw;
+  }
+  main .price-list .house-item .house-item-stats a img {
+    width: 10vw;
+  }
+  main .working-perfect {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vw;
+  }
+  main .working-perfect .text-special {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    width: 100%;
+  }
+  main .working-perfect .text-special h1 {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  main .working-perfect .text-special p {
+    font-size: 3vw;
+    line-height: 4vw;
+    max-width: 70%;
+  }
+  main .working-perfect form {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .working-perfect form::before {
+    width: 24vw;
+    height: 18vw;
+    right: 0.2vw;
+    top: -7.8vw;
+  }
+  main .working-perfect form .text h2 {
+    font-size: 4vw;
+  }
+  main .working-perfect form .text p {
+    font-size: 3vw;
+  }
+  main .working-perfect form input {
+    height: auto;
+    font-size: 4vw;
+    line-height: 6vw;
+    width: 45%;
+    margin-bottom: 2vw;
+  }
+  main .working-perfect form input[type=submit] {
+    font-size: 4vw;
+    line-height: 6vw;
+    height: auto;
+    width: 45%;
+  }
+  main .working-perfect form span {
+    font-size: 2vw;
+  }
+  main .test-surprise {
+    background-position: right bottom;
+  }
+  main .test-surprise h3 {
+    font-size: 4vw;
+  }
+  main .test-surprise p {
+    font-size: 3vw;
+  }
+  main .test-surprise .surprise {
+    height: auto;
+  }
+  main .test-surprise .surprise h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main .test-surprise .surprise .surprise-item img {
+    height: 15vw;
+  }
+  main .test-surprise .surprise .surprise-item p {
+    font-size: 3vw;
+  }
+  main .ready-project h3 {
+    font-size: 4vw;
+  }
+  main .ready-project p {
+    font-size: 3vw;
+  }
+  main .ready-project form {
+    padding-top: 3vw;
+  }
+  main .ready-project form input {
+    height: auto;
+    font-size: 3vw;
+    line-height: 4.5vw;
+    margin-bottom: 2vw;
+  }
+  main .ready-project form textarea {
+    font-size: 3vw;
+    line-height: 4.5vw;
+  }
+  main .ready-project form .messengers .whats-app, main .ready-project form .messengers .viber, main .ready-project form .messengers .telegram {
+    width: 10vw;
+    height: 10vw;
+  }
+  main .ready-project button {
+    width: 100%;
+    font-size: 3vw;
+  }
+  main .services h1 {
+    width: 100%;
+    font-size: 5vw;
+    text-align: start;
+  }
+  main .services .service-item h3 {
+    font-size: 5vw;
+  }
+  main .services .service-item p {
+    font-size: 3vw;
+  }
+  main .services .service-item form input {
+    height: auto;
+    width: 100%;
+    font-size: 3vw;
+  }
+  main .services .service-item form input[type=submit] {
+    height: auto;
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  main .services .service-item .services-image {
+    height: 20vw;
+  }
+  main .services .service-item .services-image img {
+    width: 35vw;
+  }
+  main .services .service-item .services-image .img2 {
+    height: 41vw;
+    left: -6vw;
+  }
+  main .services .service-item .reverse .services-image img {
+    height: 50vw;
+  }
+  main .services .row {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main .services .row .services-image {
+    bottom: 0;
+  }
+  main .portfolio .portfolio-content .portfolio-item {
+    width: 45%;
+    height: 25vw;
+    margin-bottom: 5.5vw;
+  }
+  main .portfolio .portfolio-content .portfolio-item div {
+    width: 100%;
+  }
+  main .portfolio .portfolio-content .portfolio-item div p {
+    font-size: 2vw;
+    margin: 0;
+  }
+  main .portfolio .btn-container button {
+    width: 100%;
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+  main .faq .row {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  main .faq h3 {
+    font-size: 6vw;
+  }
+  main .faq p {
+    font-size: 3vw;
+  }
+  main .faq form input, main .faq form textarea {
+    height: auto;
+    margin-bottom: 3vw;
+  }
+  main .faq form input[type=submit], main .faq form textarea[type=submit] {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
   main .menu-right-fixed {
     display: none;
   }
