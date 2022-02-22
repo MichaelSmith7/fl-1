@@ -1948,7 +1948,8 @@ strong{
                 position: fixed;
                 top: 0;
                 left: -42vw;
-                height: 100vh;
+                height: 50vh;
+                border-radius: 0 0 15vw 0;
                 width: 40vw;
                 padding: 0  0 0 2vw;
                 transition: 0.5s;
@@ -2005,7 +2006,7 @@ strong{
             }
             form{
                 input{
-                    font-size: 4vw;
+                    font-size: 3vw;
                     margin-bottom: 1vw;
                 }
                 input[type="submit"]{
@@ -2076,7 +2077,7 @@ strong{
                     width: 100%;
                     input{
                         height: auto;
-                        font-size: 4vw;
+                        font-size: 3vw;
                         line-height: 6vw;
                         &[type="submit"]{
                             height: auto;
@@ -2202,7 +2203,7 @@ strong{
                 }
                 input{
                     height: auto;
-                    font-size: 4vw;
+                    font-size: 3vw;
                     line-height: 6vw;
                     width: 45%;
                     margin-bottom: 2vw;

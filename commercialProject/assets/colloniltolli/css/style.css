@@ -2353,7 +2353,8 @@ strong {
     position: fixed;
     top: 0;
     left: -42vw;
-    height: 100vh;
+    height: 50vh;
+    border-radius: 0 0 15vw 0;
     width: 40vw;
     padding: 0 0 0 2vw;
     -webkit-transition: 0.5s;
@@ -2407,7 +2408,7 @@ strong {
     font-size: 4vw;
   }
   main .project-dmitrov-brus form input {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-bottom: 1vw;
   }
   main .project-dmitrov-brus form input[type=submit] {
@@ -2467,7 +2468,7 @@ strong {
   }
   main .block-form .form-content form input {
     height: auto;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 6vw;
   }
   main .block-form .form-content form input[type=submit] {
@@ -2591,7 +2592,7 @@ strong {
   }
   main .working-perfect form input {
     height: auto;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 6vw;
     width: 45%;
     margin-bottom: 2vw;
