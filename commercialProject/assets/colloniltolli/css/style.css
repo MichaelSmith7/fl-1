@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 html {
   font-weight: 600;
@@ -77,6 +77,10 @@ textarea {
   padding: 0 9vw;
 }
 
+.excurs-home, .maket-home, .consult-home {
+  cursor: pointer;
+}
+
 header {
   max-width: 82vw;
   width: 100%;
@@ -113,8 +117,6 @@ header .header-top .sherule p {
 }
 header .header-top .maket-home {
   font-family: "Montserrat", sans-serif;
-}
-header .header-top .maket-home a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +124,7 @@ header .header-top .maket-home a {
       -ms-flex-align: center;
           align-items: center;
 }
-header .header-top .maket-home a .maket-home-icon {
+header .header-top .maket-home .maket-home-icon {
   width: 3.5vw;
   height: 3.5vw;
   background-image: url("./../img/modelling.svg");
@@ -132,11 +134,11 @@ header .header-top .maket-home a .maket-home-icon {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-header .header-top .maket-home a .maket-home-icon:hover {
+header .header-top .maket-home .maket-home-icon:hover {
   -webkit-transform: scale(1.25, 1.25);
           transform: scale(1.25, 1.25);
 }
-header .header-top .maket-home a p {
+header .header-top .maket-home p {
   color: #000;
   line-height: 2vw;
   border-bottom: 0.02vw solid #000;
@@ -145,7 +147,7 @@ header .header-top .maket-home a p {
   transition: 0.5s;
   margin: 0;
 }
-header .header-top .maket-home a p:hover {
+header .header-top .maket-home p:hover {
   color: #319F1C;
 }
 header .header-top .contacts {
@@ -298,7 +300,7 @@ header .header-bottom .menu li .submenu li {
 }
 header .header-bottom .menu li .submenu li a {
   line-height: 1.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   color: #fff;
 }
 header .header-bottom .menu li:hover .submenu {
@@ -321,6 +323,148 @@ header .header-bottom .menu li b {
 main {
   font-family: "Montserrat", sans-serif;
 }
+main .pop-ups {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main .pop-ups p {
+  font-size: 0.8vw;
+  font-family: "Raleway", sans-serif;
+}
+main .pop-ups .pop-maket, main .pop-ups .pop-consult, main .pop-ups .pop-thx, main .pop-ups .pop-excurs {
+  background-color: #fff;
+  text-align: center;
+  max-width: 50vw;
+}
+main .pop-ups .pop-maket .row, main .pop-ups .pop-consult .row, main .pop-ups .pop-thx .row, main .pop-ups .pop-excurs .row {
+  margin: 0 !important;
+}
+main .pop-ups .pop-maket .text-and-form, main .pop-ups .pop-consult .text-and-form, main .pop-ups .pop-thx .text-and-form, main .pop-ups .pop-excurs .text-and-form {
+  padding: 2vw 3vw;
+}
+main .pop-ups .pop-maket .text-and-form form, main .pop-ups .pop-consult .text-and-form form, main .pop-ups .pop-thx .text-and-form form, main .pop-ups .pop-excurs .text-and-form form {
+  width: 100%;
+  text-align: start;
+}
+main .pop-ups .pop-maket .text-and-form form input, main .pop-ups .pop-consult .text-and-form form input, main .pop-ups .pop-thx .text-and-form form input, main .pop-ups .pop-excurs .text-and-form form input {
+  font-size: 0.8vw;
+  line-height: 2vw;
+  width: 100%;
+  padding-left: 2vw;
+  margin-bottom: 1vw;
+  border: #319F1C 0.1vw solid;
+  border-radius: 0.5vw;
+}
+main .pop-ups .pop-maket .text-and-form form input[type=submit], main .pop-ups .pop-consult .text-and-form form input[type=submit], main .pop-ups .pop-thx .text-and-form form input[type=submit], main .pop-ups .pop-excurs .text-and-form form input[type=submit] {
+  background-color: #319F1C;
+  border: 0.1vw solid #319F1C;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .pop-ups .pop-maket .text-and-form form input[type=submit]:hover, main .pop-ups .pop-consult .text-and-form form input[type=submit]:hover, main .pop-ups .pop-thx .text-and-form form input[type=submit]:hover, main .pop-ups .pop-excurs .text-and-form form input[type=submit]:hover {
+  color: #319F1C;
+  background-color: #fff;
+}
+main .pop-ups .pop-maket .text-and-form .messengers, main .pop-ups .pop-consult .text-and-form .messengers, main .pop-ups .pop-thx .text-and-form .messengers, main .pop-ups .pop-excurs .text-and-form .messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin-bottom: 2vw;
+}
+main .pop-ups .pop-maket .text-and-form .messengers .whats-app, main .pop-ups .pop-maket .text-and-form .messengers .telegram, main .pop-ups .pop-maket .text-and-form .messengers .viber, main .pop-ups .pop-consult .text-and-form .messengers .whats-app, main .pop-ups .pop-consult .text-and-form .messengers .telegram, main .pop-ups .pop-consult .text-and-form .messengers .viber, main .pop-ups .pop-thx .text-and-form .messengers .whats-app, main .pop-ups .pop-thx .text-and-form .messengers .telegram, main .pop-ups .pop-thx .text-and-form .messengers .viber, main .pop-ups .pop-excurs .text-and-form .messengers .whats-app, main .pop-ups .pop-excurs .text-and-form .messengers .telegram, main .pop-ups .pop-excurs .text-and-form .messengers .viber {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 0.8vw;
+}
+main .pop-ups .pop-maket .text-and-form .messengers .whats-app:hover, main .pop-ups .pop-maket .text-and-form .messengers .telegram:hover, main .pop-ups .pop-maket .text-and-form .messengers .viber:hover, main .pop-ups .pop-consult .text-and-form .messengers .whats-app:hover, main .pop-ups .pop-consult .text-and-form .messengers .telegram:hover, main .pop-ups .pop-consult .text-and-form .messengers .viber:hover, main .pop-ups .pop-thx .text-and-form .messengers .whats-app:hover, main .pop-ups .pop-thx .text-and-form .messengers .telegram:hover, main .pop-ups .pop-thx .text-and-form .messengers .viber:hover, main .pop-ups .pop-excurs .text-and-form .messengers .whats-app:hover, main .pop-ups .pop-excurs .text-and-form .messengers .telegram:hover, main .pop-ups .pop-excurs .text-and-form .messengers .viber:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+main .pop-ups .pop-maket .text-and-form .messengers .whats-app, main .pop-ups .pop-consult .text-and-form .messengers .whats-app, main .pop-ups .pop-thx .text-and-form .messengers .whats-app, main .pop-ups .pop-excurs .text-and-form .messengers .whats-app {
+  background-image: url("./../img/whatsapp.svg");
+}
+main .pop-ups .pop-maket .text-and-form .messengers .telegram, main .pop-ups .pop-consult .text-and-form .messengers .telegram, main .pop-ups .pop-thx .text-and-form .messengers .telegram, main .pop-ups .pop-excurs .text-and-form .messengers .telegram {
+  background-image: url("./../img/telegram.svg");
+}
+main .pop-ups .pop-maket .text-and-form .messengers .viber, main .pop-ups .pop-consult .text-and-form .messengers .viber, main .pop-ups .pop-thx .text-and-form .messengers .viber, main .pop-ups .pop-excurs .text-and-form .messengers .viber {
+  background-image: url("./../img/viber.svg");
+}
+main .pop-ups .pop-maket .image, main .pop-ups .pop-consult .image, main .pop-ups .pop-thx .image, main .pop-ups .pop-excurs .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0 !important;
+  background-image: url("./../img/pop-maket.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .pop-ups .pop-maket .image b, main .pop-ups .pop-consult .image b, main .pop-ups .pop-thx .image b, main .pop-ups .pop-excurs .image b {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 2vw;
+  margin: 0 0.5vw;
+}
+main .pop-ups .pop-consult .image {
+  background-image: url("./../img/pop-consult.png");
+  background-position: center;
+}
+main .pop-ups .pop-thx {
+  text-align: start;
+}
+main .pop-ups .pop-thx h3 {
+  margin: 1vw 0;
+}
+main .pop-ups .pop-thx h3 strong {
+  font-weight: 900;
+}
+main .pop-ups .pop-thx .image {
+  background-image: url("./../img/pop-thx.png");
+  background-position: center;
+}
+main .pop-ups .pop-maket {
+  display: none;
+}
+main .pop-ups .pop-consult {
+  display: none;
+}
+main .pop-ups .pop-thx {
+  display: none;
+}
+main .pop-ups .close-menu {
+  display: none;
+}
 main ul {
   list-style-image: url("./../img/marker.svg");
 }
@@ -328,7 +472,7 @@ main .menu-right-fixed {
   position: fixed;
   right: 0;
   top: 15vw;
-  z-index: 99999;
+  z-index: 9;
 }
 main .menu-right-fixed .block {
   background-color: #fff;
@@ -340,17 +484,14 @@ main .menu-right-fixed .block {
           align-items: center;
   margin: 0.5vw 0;
   font-family: "Raleway", sans-serif;
-  width: 8vw;
+  width: 3vw;
   border-radius: 0.5vw 0 0 0.5vw;
-  margin-right: -5vw;
+  margin-right: 0vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-main .menu-right-fixed .block:hover {
-  margin-right: 0;
-}
 main .menu-right-fixed .block a {
-  font-size: 1vw;
+  font-size: 0.8vw;
   color: black;
 }
 main .menu-right-fixed .block a:hover {
@@ -364,9 +505,17 @@ main .menu-right-fixed .block img {
 main .project-dmitrov-brus {
   padding: 0 9vw;
 }
+main .project-dmitrov-brus h2 {
+  font-size: 2vw;
+  margin: 2.5vw 0px;
+}
+main .project-dmitrov-brus h3 {
+  font-size: 1.5vw;
+  margin-bottom: 1.5vw;
+}
 main .project-dmitrov-brus button {
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 800;
   width: 100%;
   padding: 0.5vw 0;
@@ -388,13 +537,14 @@ main .project-dmitrov-brus button:hover {
           box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.7);
 }
 main .project-dmitrov-brus .product-image {
-  max-height: 20vw;
+  max-height: 22vw;
   height: 100%;
-  margin-bottom: 1vw;
+  margin-bottom: 1.5vw;
 }
 main .project-dmitrov-brus .product-image .product-image-all {
-  max-height: 20vw;
+  max-height: 22vw;
   height: 100%;
+  padding-right: 2vw;
   overflow-y: auto;
   overflow-x: hidden;
   -ms-scroll-snap-type: y proximity;
@@ -403,7 +553,7 @@ main .project-dmitrov-brus .product-image .product-image-all {
           transform: scaleX(-1);
 }
 main .project-dmitrov-brus .product-image .product-image-all img {
-  height: 8vw;
+  height: 5vw;
   width: 100%;
   margin: 0.5vw 0;
   -webkit-transform: scaleX(-1);
@@ -432,7 +582,7 @@ main .project-dmitrov-brus form input {
   margin-bottom: 0.5vw;
   border: #319F1C 0.1vw solid;
   border-radius: 0.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 2vw;
   padding-left: 1vw;
 }
@@ -455,31 +605,41 @@ main .project-dmitrov-brus .project-dmitrov-stats span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1vw;
+  font-size: 0.8vw;
+  line-height: 1vw;
 }
 main .project-dmitrov-brus .project-dmitrov-price {
   border: #319F1C 0.1vw solid;
-  padding: 0.5vw 2vw;
-  margin-bottom: 1vw;
+  line-height: 3.8vw;
+  margin-bottom: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 59%;
 }
 main .project-dmitrov-brus .project-dmitrov-price p {
-  font-size: 1.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8vw;
   margin: 0;
 }
 main .project-dmitrov-brus .project-dmitrov-price p strong {
-  font-size: 2vw;
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
 }
 main .project-dmitrov-brus .project-dmitrov-description ul {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 1vw;
-  line-height: 2vw;
+  font-size: 0.9vw;
+  line-height: 1.4vw;
   list-style-image: none;
   list-style-type: disc;
   padding: 0 1vw;
@@ -503,14 +663,14 @@ main .test-surprise {
   background-position: right;
 }
 main .test-surprise h2 {
-  font-size: 7vw;
+  font-size: 3.5vw;
   color: #319F1C;
   text-align: center;
 }
 main .test-surprise h3 {
-  margin-top: 5vw;
+  margin-top: 5.5vw;
   font-size: 2vw;
-  max-width: 70%;
+  max-width: 55%;
 }
 main .test-surprise p {
   margin: 0;
@@ -524,10 +684,11 @@ main .test-surprise .surprise button {
   border: none;
   background-color: #319F1C;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 0.5vw;
   margin: 1vw 0;
-  padding: 1vw 2vw;
+  line-height: 3vw;
+  width: 15%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -552,15 +713,14 @@ main .test-surprise .surprise-item {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 15vw;
   margin-bottom: 2vw;
 }
 main .test-surprise .surprise-item:nth-child(5) img {
-  max-width: 15vw;
+  max-width: 12vw;
   width: 100%;
 }
 main .test-surprise .surprise-item img {
-  max-width: 10vw;
+  max-width: 7vw;
   width: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -570,7 +730,7 @@ main .test-surprise .surprise-item img:hover {
           transform: scale(1.2);
 }
 main .test-surprise .surprise-item p {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .ready-project {
   padding: 0 9vw;
@@ -603,7 +763,7 @@ main .ready-project form .row {
 main .ready-project form input, main .ready-project form textarea {
   border: #319F1C solid 0.1vw;
   border-radius: 0.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 2vw;
   margin-bottom: 1vw;
   width: 100%;
@@ -650,7 +810,7 @@ main .ready-project button {
   border: none;
   background-color: #319F1C;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 0.5vw;
   margin: 1vw 0;
   padding: 1vw 2vw;
@@ -673,27 +833,29 @@ main .services h1 {
   text-align: center;
 }
 main .services .service-item {
-  margin: 5vw 0;
+  margin: 3.5vw 0;
 }
 main .services .service-item h3 {
-  font-size: 1.5vw;
+  font-size: 0.9vw;
+}
+main .services .service-item form {
+  width: 70%;
 }
 main .services .service-item form input {
-  width: 18vw;
+  width: 100%;
   height: 2vw;
   border: 0.1vw solid #319F1C;
   border-radius: 0.5vw;
   padding-left: 1.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0.5vw 0;
 }
 main .services .service-item form input[type=submit] {
   background-color: #319F1C;
   border: none;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0;
-  width: 18vw;
   height: 2vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -720,7 +882,7 @@ main .services .service-item .reverse .services-image img {
 main .services .service-item .services-image {
   border-radius: 2vw;
   position: relative;
-  bottom: -5.5vw;
+  bottom: -3vw;
   height: 8vw;
   background-color: #EBEBEB;
 }
@@ -783,7 +945,7 @@ main .portfolio .portfolio-content .portfolio-item div {
   padding: 0.5vw;
 }
 main .portfolio .portfolio-content .portfolio-item div p {
-  font-size: 1vw;
+  font-size: 0.8vw;
   width: 70%;
 }
 main .portfolio .btn-container {
@@ -799,7 +961,7 @@ main .portfolio .btn-container button {
   background-color: #319F1C;
   border: none;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 3vw;
   margin: 1vw auto;
   width: 18vw;
@@ -822,7 +984,7 @@ main .faq h3 {
   font-size: 2vw;
 }
 main .faq p {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .faq .maps {
   width: 100%;
@@ -884,7 +1046,7 @@ main .faq form input[type=submit], main .faq form textarea[type=submit] {
   background-color: #319F1C;
   border: none;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -997,7 +1159,7 @@ main .dmitrov-home .slider-plan .slick-prev {
 }
 main .dmitrov-home button {
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 800;
   width: 25%;
   padding: 0.5vw 0;
@@ -1115,13 +1277,13 @@ main .working-perfect form input {
   border: 0.1vw solid #319F1C;
   border-radius: 0.5vw;
   padding-left: 1.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .working-perfect form input:nth-child(5) {
   background-color: #319F1C;
   border: none;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0;
   width: 18vw;
   height: 2vw;
@@ -1187,7 +1349,7 @@ main .price-list .price-list-stats form {
   --background: #ffffff;
   --text: #414856;
   --radio: #536d4e;
-  --radio-checked: $mainColor;
+  --radio-checked: #319F1C;
   --radio-size: 1.5vw;
   --width: 100%;
   --height: auto;
@@ -1341,12 +1503,13 @@ main .price-list .calc-price input, main .price-list .sale5 input, main .price-l
   border-radius: 0.5vw;
   margin-bottom: 0.5vw;
   height: 2vw;
+  padding-left: 0.5vw;
 }
 main .price-list .calc-price input[type=submit], main .price-list .sale5 input[type=submit], main .price-list .action-friend input[type=submit] {
   background-color: #319F1C;
   border: none;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1358,7 +1521,6 @@ main .price-list .calc-price input[type=submit]:hover, main .price-list .sale5 i
           box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.7);
 }
 main .price-list .calc-price h3, main .price-list .sale5 h3, main .price-list .action-friend h3 {
-  margin-top: 5vw;
   font-size: 1.5vw;
 }
 main .price-list .calc-price h4, main .price-list .sale5 h4, main .price-list .action-friend h4 {
@@ -1370,7 +1532,7 @@ main .price-list .calc-price p, main .price-list .sale5 p, main .price-list .act
 }
 main .price-list .calc-price button, main .price-list .sale5 button, main .price-list .action-friend button {
   background-color: #319F1C;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 2vw;
   color: #fff;
   display: -webkit-box;
@@ -1412,7 +1574,8 @@ main .price-list .house-item .house-item-stats {
   padding: 2vw;
 }
 main .price-list .house-item .house-item-stats strong {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  margin-left: 0.5vw;
 }
 main .price-list .house-item .house-item-stats span {
   width: 100%;
@@ -1539,7 +1702,7 @@ main .first-block h1 {
   font-size: 3vw;
 }
 main .first-block p {
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: "Raleway", sans-serif;
 }
 main .first-block button {
@@ -1591,7 +1754,7 @@ main .block-facts .row .block-facts-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 900;
   font-family: "Raleway", sans-serif;
 }
@@ -1607,7 +1770,7 @@ main .big-text-block h2 {
   margin: 2vw 0;
 }
 main .big-text-block p, main .big-text-block ul {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .big-text-block .key-60 div {
   font-size: 0.8vw;
@@ -1730,7 +1893,7 @@ main .video-block .row .panel {
 }
 main .video-block .row .panel p {
   margin: 0;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 2vw;
 }
 main .video-block video {
@@ -1790,7 +1953,7 @@ main .prices .prices-messenger {
 }
 main .prices p {
   margin: 0;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .prices .btn-telegram {
   background-color: #3D85C6;
@@ -1810,7 +1973,7 @@ main .prices .btn-viber, main .prices .btn-telegram {
           justify-content: center;
   border-radius: 0.5vw;
   margin-right: 3vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   height: 3vw;
   color: #fff;
 }
@@ -1867,7 +2030,7 @@ main .packets .packet-red-border {
 }
 main .packets .packet-red-border .home, main .packets .packet-red-border .price {
   width: 18vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1896,7 +2059,7 @@ main .credit .bank {
 main .credit p {
   margin: 2vw 0;
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .garant ul {
   margin: 3vw 0;
@@ -1995,7 +2158,7 @@ main .project button {
   border: none;
   background-color: #319F1C;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 0.5vw;
   margin: 1vw 0;
   padding: 1vw 2vw;
@@ -2091,7 +2254,7 @@ footer .list-nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   height: 100%;
@@ -2237,8 +2400,6 @@ strong {
   }
   header .header-top .maket-home {
     width: 80%;
-  }
-  header .header-top .maket-home a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2246,11 +2407,11 @@ strong {
         -ms-flex-pack: start;
             justify-content: start;
   }
-  header .header-top .maket-home a .maket-home-icon {
+  header .header-top .maket-home .maket-home-icon {
     width: 6.5vw;
     height: 6.5vw;
   }
-  header .header-top .maket-home a p {
+  header .header-top .maket-home p {
     font-size: 3vw;
   }
   header .header-top .contacts {
@@ -2957,7 +3118,7 @@ strong {
     width: 33%;
   }
   footer .social p {
-    font-size: 1vw;
+    font-size: 0.8vw;
     max-width: 20vw;
   }
 

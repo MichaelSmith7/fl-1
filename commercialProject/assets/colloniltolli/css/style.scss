@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 html{
     font-weight: 600;
@@ -66,7 +66,9 @@ textarea{
 }
 
 
-
+.excurs-home, .maket-home, .consult-home{
+    cursor: pointer;
+}
 header{
     max-width: 82vw;
     width: 100%;
@@ -95,33 +97,32 @@ header{
         }
         .maket-home{
             font-family: $montserrat;
-            a{
-                display: flex;
-                align-items: center;
-                .maket-home-icon{
-                    width: 3.5vw;
-                    height: 3.5vw;
-                    background-image: url("./../img/modelling.svg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    margin: 0.5vw;  
-                    transition: 0.5s;
-                    &:hover{
-                        transform: scale(1.25,1.25);
-                    }                  
-                }
-                p{
-                    color: #000;
-                    line-height: 2vw;
-                    border-bottom: 0.02vw solid #000;
-                    font-size: $fonts;
-                    transition: 0.5s;
-                    margin: 0;
-                    &:hover{
-                        color: $mainColor;
-                    }    
-                }
+            display: flex;
+            align-items: center;
+            .maket-home-icon{
+                width: 3.5vw;
+                height: 3.5vw;
+                background-image: url("./../img/modelling.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0.5vw;  
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.25,1.25);
+                }                  
             }
+            p{
+                color: #000;
+                line-height: 2vw;
+                border-bottom: 0.02vw solid #000;
+                font-size: $fonts;
+                transition: 0.5s;
+                margin: 0;
+                &:hover{
+                    color: $mainColor;
+                }    
+            }
+            
         }
         .contacts{
             display: flex;
@@ -227,7 +228,7 @@ header{
                         border-bottom: 0.1vw solid #fff;
                         a{
                             line-height: 1.5vw;
-                            font-size: 1vw;
+                            font-size: $fonts;
                             color: #fff;
                             
                         }
@@ -257,6 +258,128 @@ header{
 }
 
 main{
+    .pop-ups{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        transform: scale(1, 0);
+        transition: 0.2s;
+        p{
+            font-size: $fonts;
+            font-family: $raleway;
+        }
+        .pop-maket, .pop-consult, .pop-thx, .pop-excurs{
+            background-color: #fff;
+            text-align: center;
+            max-width: 50vw;
+            .row{
+                margin: 0 !important;
+            }
+            .text-and-form{
+                padding: 2vw 3vw;
+                form{
+                    width: 100%;
+                    text-align: start;
+                    input{
+                        font-size: $fonts;
+                        line-height: 2vw;
+                        width: 100%;
+                        padding-left: 2vw;
+                        margin-bottom: 1vw;
+                        border: $mainColor 0.1vw solid;
+                        border-radius: 0.5vw;
+                        &[type="submit"]{
+                            background-color: $mainColor;
+                            border: 0.1vw solid $mainColor;
+                            color: #fff;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $mainColor;
+                                background-color: #fff;
+                                
+                            }
+                        }
+                    }
+                }
+                .messengers{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    margin-bottom: 2vw;
+                    .whats-app, .telegram, .viber{
+                        width: 1.5vw;
+                        height: 1.5vw;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        transition: 0.5s;
+                        margin: 0 0.8vw;
+                        &:hover{
+                            transform: scale(1.5, 1.5);
+                        }
+                    }
+                    .whats-app{background-image: url("./../img/whatsapp.svg");}
+                    .telegram{background-image: url("./../img/telegram.svg");}
+                    .viber{background-image: url("./../img/viber.svg");}
+                }
+            }
+            
+            .image{
+                display: flex;
+                align-items: flex-start;
+                justify-content: end;
+                padding: 0 !important;
+                background-image: url("./../img/pop-maket.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                b{
+                    transform: rotate(45deg);
+                    font-size: 2vw;
+                    margin: 0 0.5vw;
+                }
+            }
+        }
+        .pop-consult{
+            .image{
+                background-image: url("./../img/pop-consult.png");
+                background-position: center;
+            }
+        }
+        .pop-thx{
+            text-align: start;
+            h3{
+                margin: 1vw 0;
+                strong{
+                    font-weight: 900;
+                }
+            }
+            .image{
+                background-image: url("./../img/pop-thx.png");
+                background-position: center;
+            }
+
+        }
+        .pop-maket{
+            display: none;
+        }
+        .pop-consult{
+            display: none;
+        }
+        .pop-thx{
+            display: none;
+        }
+        .close-menu{
+            display: none;
+        }
+    }
+
+
+
     ul{
         list-style-image:url("./../img/marker.svg") ;
     }
@@ -265,22 +388,19 @@ main{
         position: fixed;
         right: 0;
         top: 15vw;
-        z-index: 99999;
+        z-index: 9;
         .block{
             background-color: #fff;
             display: flex;
             align-items: center;
             margin: 0.5vw 0;
             font-family: $raleway;
-            width: 8vw;
+            width: 3vw;
             border-radius: 0.5vw 0 0 0.5vw;
-            margin-right: -5vw;
+            margin-right: 0vw;
             transition: 0.5s;
-            &:hover{
-                margin-right: 0;
-            }
             a{
-                font-size: 1vw;
+                font-size: $fonts;
                 color: black;
                 &:hover{
                     color: $mainColor;
@@ -295,9 +415,18 @@ main{
     }
     .project-dmitrov-brus{
         padding: 0 9vw;
+        h2{
+            font-size: 2vw;
+            margin: 2.5vw 0px;
+        }
+        h3{
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
         button{
             font-family: $raleway;
-            font-size: 1vw;
+            font-size: $fonts;
             font-weight: 800;
             width: 100%;
             padding: 0.5vw 0;
@@ -316,18 +445,19 @@ main{
             }
         }
         .product-image{
-            max-height: 20vw;
+            max-height: 22vw;
             height: 100%;
-            margin-bottom: 1vw;
+            margin-bottom: 1.5vw;
             .product-image-all{
-                max-height: 20vw;
+                max-height: 22vw;
                 height: 100%;
+                padding-right: 2vw;
                 overflow-y: auto;
                 overflow-x: hidden;
                 scroll-snap-type: y proximity;
                 transform:scaleX(-1);
                 img{
-                    height: 8vw;
+                    height: 5vw;
                     width: 100%;
                     margin: 0.5vw 0;
                     transform:scaleX(-1);
@@ -350,7 +480,7 @@ main{
                 margin-bottom: 0.5vw;
                 border: $mainColor 0.1vw solid;
                 border-radius: 0.5vw;
-                font-size: 1vw;
+                font-size: $fonts;
                 line-height: 2vw;
                 padding-left: 1vw;
                 &[type="submit"]{
@@ -367,20 +497,27 @@ main{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1vw;
+                font-size: $fonts;
+                line-height: 1vw;
             }
         }
         .project-dmitrov-price{
             border: $mainColor 0.1vw solid;
-            padding: 0.5vw 2vw;
-            margin-bottom: 1vw;
+            line-height: 3.8vw;
+            margin-bottom: 2vw;
             display: flex;
             align-items: center; 
+            justify-content: space-around;
+            width: 59%;
             p{  
-                font-size: 1.5vw;
+                align-items: center;
+                font-size: $fonts;
                 margin: 0;
                 strong{
-                    font-size: 2vw;
+                    margin-left: 0.5vw;
+                    font-size: 1.5vw;
+                    font-family: $raleway;
+                    font-weight: 900;
                 }
             }
         }
@@ -388,8 +525,8 @@ main{
             ul{ 
                 font-family: $raleway;
                 font-weight: 900;
-                font-size: 1vw;
-                line-height: 2vw;
+                font-size: 0.9vw;
+                line-height: 1.4vw;
                 list-style-image: none;
                 list-style-type: disc;
                 padding: 0 1vw;
@@ -407,14 +544,14 @@ main{
         background-size: 70%;
         background-position: right;
         h2{
-            font-size: 7vw;
+            font-size: 3.5vw;
             color: $mainColor;
             text-align: center;
         }
         h3{
-            margin-top: 5vw;
+            margin-top: 5.5vw;
             font-size: 2vw;
-            max-width: 70%;
+            max-width: 55%;
         }
         p{
             margin: 0;
@@ -427,10 +564,11 @@ main{
                 border: none;
                 background-color: $mainColor;
                 color: #fff;
-                font-size: 1vw;
+                font-size: $fonts;
                 border-radius: 0.5vw;
                 margin: 1vw 0;
-                padding: 1vw 2vw;
+                line-height: 3vw;
+                width: 15%;
                 transition: 0.5s;
                 &:hover{
                     transform: scale(0.9, 0.9);
@@ -444,16 +582,15 @@ main{
             justify-content: space-between;;
             align-items: center;
             text-align: center;
-            height: 15vw;
             margin-bottom: 2vw;
             &:nth-child(5){
                 img{
-                    max-width: 15vw;
+                    max-width: 12vw;
                     width: 100%;
                 }
             }
             img{
-                max-width: 10vw;
+                max-width: 7vw;
                 width: 100%;
                 transition: 0.2s;
                 &:hover{
@@ -461,7 +598,7 @@ main{
                 }
             }
             p{
-                font-size: 1vw;
+                font-size: $fonts;
             }
         }
     }
@@ -484,7 +621,7 @@ main{
             input, textarea{
                 border:$mainColor solid 0.1vw;
                 border-radius: 0.5vw;
-                font-size: 1vw;
+                font-size: $fonts;
                 line-height: 2vw;
                 margin-bottom: 1vw;
                 width: 100%;
@@ -520,7 +657,7 @@ main{
             border: none;
             background-color: $mainColor;
             color: #fff;
-            font-size: 1vw;
+            font-size: $fonts;
             border-radius: 0.5vw;
             margin: 1vw 0;
             padding: 1vw 2vw;
@@ -542,26 +679,26 @@ main{
 
 
         .service-item{
-            margin: 5vw 0;
+            margin: 3.5vw 0;
             h3{
-                font-size: 1.5vw
+                font-size: 0.9vw;
             }
             form{
+                width: 70%;
                 input{
-                    width: 18vw;
+                    width: 100%;
                     height: 2vw;
                     border: 0.1vw solid $mainColor;
                     border-radius: 0.5vw;
                     padding-left: 1.5vw;
-                    font-size: 1vw;
+                    font-size: $fonts;
                     margin: 0.5vw 0;
                     &[type='submit']{
                         background-color: $mainColor;
                         border: none;
                         color: #fff;
-                        font-size: 1vw;
+                        font-size: $fonts;
                         margin: 0;
-                        width: 18vw;
                         height: 2vw;
                         transition: 0.5s;
                         &:hover{
@@ -587,7 +724,7 @@ main{
             .services-image{
                 border-radius: 2vw;
                 position: relative;
-                bottom: -5.5vw;
+                bottom: -3vw;
                 height: 8vw;
                 background-color: #EBEBEB;
                 img{
@@ -636,7 +773,7 @@ main{
                     color:#fff;
                     padding: 0.5vw;
                     p{
-                        font-size: 1vw;
+                        font-size: $fonts;
                         width: 70%;
                     }
                 }
@@ -650,7 +787,7 @@ main{
                 background-color: $mainColor;
                 border: none;
                 color: #fff;
-                font-size: 1vw;
+                font-size: $fonts;
                 line-height: 3vw;
                 margin: 1vw auto;
                 width: 18vw;
@@ -673,7 +810,7 @@ main{
             font-size: 2vw;
         }
         p{
-            font-size: 1vw;
+            font-size: $fonts;
         }
         .maps{
             width: 100%;
@@ -721,7 +858,7 @@ main{
                     background-color: $mainColor;
                     border: none;
                     color: #fff;
-                    font-size: 1vw;
+                    font-size: $fonts;
                     margin: 0;
                     transition: 0.5s;
                     width: 50%;
@@ -816,7 +953,7 @@ main{
         }
         button{
             font-family: $raleway;
-            font-size: 1vw;
+            font-size: $fonts;
             font-weight: 800;
             width: 25%;
             padding: 0.5vw 0;
@@ -926,12 +1063,12 @@ main{
                 border: 0.1vw solid $mainColor;
                 border-radius: 0.5vw;
                 padding-left: 1.5vw;
-                font-size: 1vw;
+                font-size: $fonts;
                 &:nth-child(5){
                     background-color: $mainColor;
                     border: none;
                     color: #fff;
-                    font-size: 1vw;
+                    font-size: $fonts;
                     margin: 0;
                     width: 18vw;
                     height: 2vw;
@@ -991,7 +1128,7 @@ main{
                 --background: #ffffff;
                 --text: #414856;
                 --radio: #536d4e;
-                --radio-checked: $mainColor;
+                --radio-checked: #319F1C;
                 --radio-size: 1.5vw;
                 --width: 100%;    
                 --height: auto;
@@ -1095,9 +1232,7 @@ main{
                 100% {
                   transform: scale(1,1)
                 }
-            }
-
-              
+            }  
         }
         .calc-price, .sale5, .action-friend{
             padding: 1vw;
@@ -1110,11 +1245,12 @@ main{
                 border-radius: 0.5vw;
                 margin-bottom: 0.5vw;
                 height: 2vw;
+                padding-left: 0.5vw;
                 &[type="submit"]{
                     background-color: $mainColor;
                     border: none;
                     color: #fff;
-                    font-size: 1vw;
+                    font-size: $fonts;
                     margin: 0;
                     transition: 0.5s;
                     &:hover{
@@ -1126,7 +1262,7 @@ main{
                 }
             }
             h3{
-                margin-top: 5vw;
+                
                 font-size: 1.5vw;
             }
             h4{
@@ -1138,7 +1274,7 @@ main{
             }
             button{
                 background-color: $mainColor;
-                font-size: 1vw;
+                font-size: $fonts;
                 line-height: 2vw;
                 color: #fff;
                 display: flex;
@@ -1163,7 +1299,8 @@ main{
                 border-radius: 1vw;
                 padding: 2vw;
                 strong{
-                    font-size: 2vw;
+                    font-size: 1.5vw;
+                    margin-left: 0.5vw;
                 }
                 span{
                     width: 100%;
@@ -1262,7 +1399,7 @@ main{
             font-size: 3vw;
         }
         p{
-            font-size: 1vw;
+            font-size: $fonts;
             font-family: $raleway;
         }
         button{
@@ -1295,7 +1432,7 @@ main{
                 justify-content: center;
                 display: flex;
                 flex-direction: column;
-                font-size: 1vw;
+                font-size: $fonts;
                 font-weight: 900;
                 font-family: $raleway;
                 img{
@@ -1312,7 +1449,7 @@ main{
             margin: 2vw 0;
         }
         p,ul{
-            font-size: 1vw;
+            font-size: $fonts;
         }
 
         .key-60{
@@ -1422,7 +1559,7 @@ main{
                 margin: 3vw 0;
                 p{
                     margin: 0;
-                    font-size: 1vw;
+                    font-size: $fonts;
                     line-height: 2vw;
                 }
             }
@@ -1479,7 +1616,7 @@ main{
         }
         p{
             margin: 0;
-            font-size: 1vw;
+            font-size: $fonts;
         }
         .btn-telegram{
             background-color: #3D85C6;
@@ -1493,7 +1630,7 @@ main{
             justify-content: center;
             border-radius: 0.5vw;
             margin-right: 3vw;
-            font-size: 1vw;
+            font-size: $fonts;
             height: 3vw;
             color: #fff;
         }
@@ -1543,7 +1680,7 @@ main{
             padding-left: 3vw;
             .home, .price{
                 width: 18vw;
-                font-size: 1vw;
+                font-size: $fonts;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -1569,7 +1706,7 @@ main{
         p{
             margin: 2vw 0;
             font-family: $raleway;
-            font-size: 1vw;
+            font-size: $fonts;
         }
     }
     .garant{
@@ -1654,7 +1791,7 @@ main{
             border: none;
             background-color: $mainColor;
             color: #fff;
-            font-size: 1vw;
+            font-size: $fonts;
             border-radius: 0.5vw;
             margin: 1vw 0;
             padding: 1vw 2vw;
@@ -1730,7 +1867,7 @@ footer{
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-between;
-            font-size: 1vw;
+            font-size: $fonts;
             font-family: $raleway;
             list-style-type: none;
             height: 100%;
@@ -1857,18 +1994,16 @@ strong{
             }
             .maket-home{
                 width: 80%;
-                
-                a{
-                    display: flex;
-                    justify-content: start;
-                    .maket-home-icon{
-                        width: 6.5vw;
-                        height: 6.5vw;
-                    }
-                    p{
-                        font-size: 3vw;
-                    }
+                display: flex;
+                justify-content: start;
+                .maket-home-icon{
+                    width: 6.5vw;
+                    height: 6.5vw;
                 }
+                p{
+                    font-size: 3vw;
+                }
+                
             }
             .contacts{
                 width: 100%;
@@ -2613,7 +2748,7 @@ strong{
         .social{
             width: 33%;
             p{
-                font-size: 1vw;
+                font-size: $fonts;
                 max-width: 20vw;
             }
         }

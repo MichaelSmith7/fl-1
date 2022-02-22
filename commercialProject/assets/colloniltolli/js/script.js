@@ -50,3 +50,37 @@ $(".slide-home").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+
+
+
+let maketHome = document.querySelector(".maket-home");
+let excursHome = document.querySelector(".excurs-home");
+let consultHome = document.querySelector(".consult-home");
+
+let closeMenu = document.querySelector(".close-menu");
+
+                        
+maketHome.addEventListener('click',() => {
+    document.querySelector(".pop-maket").style.display = "flex"
+    document.querySelector(".pop-ups").style.transform = "scale(1)"
+})
+excursHome.addEventListener('click',() => {
+    document.querySelector(".pop-excurs").style.display = "flex"
+    document.querySelector(".pop-ups").style.transform = "scale(1)"
+})
+consultHome.addEventListener('click',() => {
+    document.querySelector(".pop-consult").style.display = "flex"
+    document.querySelector(".pop-ups").style.transform = "scale(1)"
+})
+
+
+
+
+document.querySelector(".close-maket").addEventListener('click',() => {
+    document.querySelector(".pop-ups").style.transform = "scale(1, 0)"
+    document.querySelector(".pop-maket").style.display = "none"
+})
+document.querySelector(".close-consult").addEventListener('click',() => {
+    document.querySelector(".pop-ups").style.transform = "scale(1, 0)"
+    document.querySelector(".pop-consult").style.display = "none"
+})
