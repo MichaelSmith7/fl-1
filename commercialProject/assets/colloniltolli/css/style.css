@@ -772,6 +772,22 @@ main .ready-project form input, main .ready-project form textarea {
 main .ready-project form textarea {
   height: 15vw;
 }
+.ready-project input[type=file] {
+    display: none;
+}
+.file-label {
+    cursor:pointer;
+}
+.file-label p {
+    display: inline-block;
+}
+.file-label:hover p {
+    color:#319F1C;
+    transition: 0.5s;
+}
+.file-label img {
+    width: 1vw;
+}
 main .ready-project form .messengers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,9 +807,16 @@ main .ready-project form .messengers .whats-app, main .ready-project form .messe
   transition: 0.5s;
   margin: 0 0.8vw;
 }
-main .ready-project form .messengers .whats-app:hover, main .ready-project form .messengers .telegram:hover, main .ready-project form .messengers .viber:hover {
+main .ready-project form .messengers .whats-app:hover, main .ready-project form .messengers .telegram:hover, main .ready-project form .messengers .viber:hover { /*он не нужен, следующий его заменяет*/
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
+}
+main .ready-project form .messengers label:hover, main .ready-project form .messengers input:checked+label {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+main .ready-project form .messengers input {
+    display: none;
 }
 main .ready-project form .messengers .whats-app {
   background-image: url("./../img/whatsapp.svg");
@@ -940,9 +963,13 @@ main .portfolio .portfolio-content .portfolio-item:hover {
           transform: scale(1.1, 1.1);
 }
 main .portfolio .portfolio-content .portfolio-item div {
+  width: 100%;
   background-color: #319F1C;
   color: #fff;
   padding: 0.5vw;
+}
+main .portfolio .portfolio-content .portfolio-item div span {
+    display: block;
 }
 main .portfolio .portfolio-content .portfolio-item div p {
   font-size: 0.8vw;
